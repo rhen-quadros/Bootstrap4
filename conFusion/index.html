@@ -37,6 +37,89 @@
             </div>
     </nav>
 
+
+    <div id="reservemodal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-check row">
+                        <label for="numberofguests" class="col-md-2 col-form-label">Number of Guests</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">1</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">2</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">3</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">4</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                            <label class="form-check-label" for="inlineCheckbox1">5</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                            <label class="form-check-label" for="inlineCheckbox2">6</label>
+                          </div>
+                        </div>
+
+                        <div class ="btn-check form-check-inline">
+                            <label for="section" class="col-auto col-form-label">Section</label>
+                            <div class="col-auto">
+                            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="on" checked>
+                            <label class="btn btn-success" for="option1">Non-Smoking</label>
+                        </div>
+                        <div class="col-auto">
+                            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                            <label class="btn btn-danger" for="option2">Smoking</label>
+                        </div>
+                        </div>
+        
+
+                          <div class="form-group row">
+                            <label for="telnum" class="col-8 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-5 col-md-3">
+                                <input type="tel" class="form-control" id="areacode" name="areacode"
+                                    placeholder="Date">
+                            </div>
+                            <div class="col-7 col-md-3">
+                                <input type="tel" class="form-control" id="telnum" name="telnum"
+                                    placeholder="Time">
+                            </div> 
+                          </div>       
+                                <div class="form-group row">
+                                <div class="offset-md-2 col-auto">
+                                <button type="submit" class="btn btn-secondary">Cancel</button>
+                                </div>     
+                            <div class="col-auto">
+                            <button type="submit" class="btn btn-primary">Reserve</button>
+                        </div>
+
+        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -90,9 +173,7 @@
                     <img src="img/logo.png" class="image-fluid">
                 </div>       
                 <div class="col-12 col-sm align-self-center">
-                    <a href="#reservetable" type="submit" class="btn btn-warning"
-                        data-toggle="tooltip" data-html="true" title="Or Call Us at <br><strong>+852 12345678</strong>"
-                        data-placement="bottom"> Reserve Table</a>
+                    <a data-toggle="modal" data-target="#reservemodal" type="submit" class="btn btn-warning"> Reserve Table</a>
                 </div>
     </header>
 
@@ -102,7 +183,7 @@
                 <div id="mycarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid"
+                            <img class="d-block"
                                 src="img/uthappizza.png" alt="uthappizza">
                             <div class="carousel-caption d-none d-md-block">
                                 <h2>Uthappizza <span class="badge badge-danger">HOT</span><span class="badge badge-pill badge-secondary">$4.99</span></h2>
@@ -131,8 +212,8 @@
                 </div>
                 <ol class="carousel-indicators">
                     <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#mycarousel" data-slide-to="1" class="active"></li>
-                    <li data-target="#mycarousel" data-slide-to="2" class="active"></li> 
+                    <li data-target="#mycarousel" data-slide-to="1"></li>
+                    <li data-target="#mycarousel" data-slide-to="2"></li> 
                 </ol>
                 <a class="carousel-control-prev" href="#mycarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
